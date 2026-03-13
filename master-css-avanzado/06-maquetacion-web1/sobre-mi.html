@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Portafolio - Víctor Robles</title>
 
     <!--Estilos-->
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
     <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/scroll.css"/>
+    <link rel="stylesheet" href="assets/css/scroll.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!--Script JS-->
+    <script src="assets/js/menu.js" defer></script>
+
 </head>
 
 <body>
@@ -47,15 +52,15 @@
                             </a>
                         </li>
                         <li class="menu__option">
-                            <a href="sobre-mi.html" class="menu__link">
+                            <a href="sobre-mi.html" class="menu__link menu__link--active">
                                 <i class="menu__icon fa-solid fa-user"></i>
                                 <span class="menu__overlay">Sobre mi</span>
                             </a>
                         </li>
                         <li class="menu__option">
-                            <a href="estudios.html" class="menu__link">
+                            <a href="curriculum.html" class="menu__link">
                                 <i class="menu__icon fa-solid fa-graduation-cap"></i>
-                                <span class="menu__overlay">Estudios</span>
+                                <span class="menu__overlay">Curriculum</span>
                             </a>
                         </li>
                         <li class="menu__option">
@@ -114,6 +119,11 @@
 
         </aside>
 
+        <div class="layout__menu-toggle">
+            <i class="menu-toggle__icon fa-solid fa-bars"></i>
+            <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+        </div>
+
         <!--Contenido principal-->
         <main class="layout__content">
 
@@ -128,9 +138,10 @@
 
                     <article class="personal-info__bio">
                         <p class="personal-info__description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis consequatur
-                            necessitatibus debitis tempore et repudiandae eum dignissimos voluptatum quo eius! Odit
-                            deserunt ratione dolore sed nihil dolorem error perspiciatis nemo.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquid vel nihil, commodi
+                            neque vero cum, repellendus ut provident fugit eaque quidem id dignissimos nam sapiente
+                            illo, ex repudiandae magni?
+                            Cumque consequatur fugiat facere eum expedita ipsa quam quae asperiores.
                         </p>
                     </article>
 
@@ -172,7 +183,7 @@
 
                         <article class="services__service">
                             <div class="service__icon">
-                                <i class="fa-solid fa-code"></i>
+                                <i class="service__real-icon fa-solid fa-code"></i>
                             </div>
 
                             <div class="service__content">
@@ -187,7 +198,7 @@
 
                         <article class="services__service">
                             <div class="service__icon">
-                                <i class="fa-solid fa-chalkboard-user"></i>
+                                <i class="service__real-icon fa-solid fa-chalkboard-user"></i>
                             </div>
 
                             <div class="service__content">
@@ -203,7 +214,7 @@
 
                         <article class="services__service">
                             <div class="service__icon">
-                                <i class="fa-solid fa-computer"></i>
+                                <i class="service__real-icon fa-solid fa-computer"></i>
                             </div>
 
                             <div class="service__content">
@@ -218,7 +229,7 @@
 
                         <article class="services__service">
                             <div class="service__icon">
-                                <i class="fa-solid fa-terminal"></i>
+                                <i class="service__real-icon fa-solid fa-terminal"></i>
                             </div>
 
                             <div class="service__content">
@@ -256,7 +267,7 @@
 
                             <div class="reviews__author">
                                 <div class="review__author-info">
-                                    <h4 class="review__Name">Ana Lopez</h4>
+                                    <h4 class="review__name">Ana Lopez</h4>
                                     <h5 class="review__company">Developers S.A</h5>
                                 </div>
 
@@ -283,7 +294,7 @@
 
                             <div class="reviews__author">
                                 <div class="review__author-info">
-                                    <h4 class="review__Name">Ruben Martinez</h4>
+                                    <h4 class="review__name">Ruben Martinez</h4>
                                     <h5 class="review__company">FullStack S.L</h5>
                                 </div>
 
@@ -306,31 +317,31 @@
 
                         <article class="clients__item">
                             <a href="#" class="clients__link">
-                                <img src="assets/img/cliente-1.png" class="clients__img" alt="Logo cliente" />
+                                <img src="assets/img/cliente-1.png" class="clients__image" alt="Logo cliente" />
                             </a>
                         </article>
 
                         <article class="clients__item">
                             <a href="#" class="clients__link">
-                                <img src="assets/img/cliente-2.png" class="clients__img" alt="Logo cliente" />
+                                <img src="assets/img/cliente-2.png" class="clients__image" alt="Logo cliente" />
                             </a>
                         </article>
 
                         <article class="clients__item">
                             <a href="#" class="clients__link">
-                                <img src="assets/img/cliente-3.png" class="clients__img" alt="Logo cliente" />
+                                <img src="assets/img/cliente-3.png" class="clients__image" alt="Logo cliente" />
                             </a>
                         </article>
 
                         <article class="clients__item">
                             <a href="#" class="clients__link">
-                                <img src="assets/img/cliente-4.png" class="clients__img" alt="Logo cliente" />
+                                <img src="assets/img/cliente-4.png" class="clients__image" alt="Logo cliente" />
                             </a>
                         </article>
 
                         <article class="clients__item">
                             <a href="#" class="clients__link">
-                                <img src="assets/img/cliente-5.png" class="clients__img" alt="Logo cliente" />
+                                <img src="assets/img/cliente-5.png" class="clients__image" alt="Logo cliente" />
                             </a>
                         </article>
 

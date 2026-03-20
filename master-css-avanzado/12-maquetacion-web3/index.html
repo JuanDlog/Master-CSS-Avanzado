@@ -12,8 +12,12 @@
     <!--Carga estilos-->
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <!--Cargar JavaScript-->
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/marquee.js" defer></script>
+    <script src="./assets/js/menu.js" defer></script>
 
     <title>Noticias de Videojuegos - Maquetación 3</title>
 
@@ -38,7 +42,84 @@
 
         <!--Navegación-->
         <section class="layout__nav">
+
             <nav class="nav__navbar">
+
+                <!--Boton menu responsive-->
+                <div class="navbar__mobile-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <!-- El menu Responsie-->
+                <ul class="navbar__mobile-list">
+
+                    <!--ELemento con submenu-->
+                    <li class="mobile-list__item">
+                        <div class="mobile-list__container">
+                            <a href="#" class="mobile-list__link">NOTICAS</a>
+
+                            <div class="mobile-list__icon" id="icon1">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <ul class="mobile-list__msubmenu" id="submenu1">
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">Videojuegos</a>
+                            </li>
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">Cine</a>
+                            </li>
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">Tecnología</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--Elemento Simple-->
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">
+                            ANALISIS
+                        </a>
+                    </li>
+
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">
+                            JUEGOS
+                        </a>
+                    </li>
+
+                    <li class="mobile-list__item">
+                        <div class="mobile-list__container">
+                            <a href="#" class="mobile-list__link">CATEGORIAS</a>
+
+                            <div class="mobile-list__icon" id="icon2">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <ul class="mobile-list__msubmenu" id="submenu2">
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">ACCIÓN</a>
+                            </li>
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">LUCHAS</a>
+                            </li>
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">SANDBOX</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">
+                            RANKING
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!--Navegación Escritorio-->
                 <ul class="navbar__list">
 
                     <li class="navbar__item">
@@ -596,6 +677,7 @@
                 </ul>
 
 
+                <!--Buscador-->
                 <form class="navbar__search">
                     <input type="text" class="search__input" name="search" placeholder="Buscar" />
 
@@ -615,6 +697,7 @@
             <h3 class="marquee__header">No te lo pierdas</h3>
 
             <div class="marquee__container">
+
                 <ul class="marquee__list">
                     <li class="marquee__item">
                         <h4 class="marquee__title">
@@ -1120,27 +1203,28 @@
                     </div>
 
                     <div class="carousel-games__raiting">
-                        <div class="raiting__cricle">
+                        <div class="raiting__circle">
                             <div class="circle__border">
                                 <span class="circle__mark">7</span>
                             </div>
                         </div>
-
-                        <div class="carousel-games__info">
-                            <a href="#" class="carousel-games__category">JUEGOS</a>
-
-                            <div class="carousel-games__line"></div>
-
-                            <h2 class="carousel-games__title">
-                                <a href="" class="carousel-games__link">
-                                    Borderlands: The Pre-Sequel
-                                </a>
-                            </h2>
-                        </div>
                     </div>
+
+                    <div class="carousel-games__info">
+                        <a href="#" class="carousel-games__category">JUEGOS</a>
+
+                        <div class="carousel-games__line"></div>
+
+                        <h2 class="carousel-games__title">
+                            <a href="" class="carousel-games__link">
+                                Borderlands: The Pre-Sequel
+                            </a>
+                        </h2>
+                    </div>
+
                 </li>
 
-                <li class="carousel-games__item">
+                <li class="carousel-games__item carousel-games__item--hidden-small">
                     <div class="carousel-games__image">
                         <a href="#" class="carousel-games__image-link">
                             <img src="./assets/img/carrusel-games-2.jpg" class="carousel-games__img" />
@@ -1148,27 +1232,27 @@
                     </div>
 
                     <div class="carousel-games__raiting">
-                        <div class="raiting__cricle">
+                        <div class="raiting__circle">
                             <div class="circle__border">
                                 <span class="circle__mark">8</span>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="carousel-games__info">
-                            <a href="#" class="carousel-games__category">JUEGOS</a>
+                    <div class="carousel-games__info">
+                        <a href="#" class="carousel-games__category">JUEGOS</a>
 
-                            <div class="carousel-games__line"></div>
+                        <div class="carousel-games__line"></div>
 
-                            <h2 class="carousel-games__title">
-                                <a href="" class="carousel-games__link">
-                                    Ace Combat Infinity Review
-                                </a>
-                            </h2>
-                        </div>
+                        <h2 class="carousel-games__title">
+                            <a href="" class="carousel-games__link">
+                                Ace Combat Infinity Review
+                            </a>
+                        </h2>
                     </div>
                 </li>
 
-                <li class="carousel-games__item">
+                <li class="carousel-games__item carousel-games__item--hidden">
                     <div class="carousel-games__image">
                         <a href="#" class="carousel-games__image-link">
                             <img src="./assets/img/carrusel-games-3.jpg" class="carousel-games__img" />
@@ -1176,27 +1260,27 @@
                     </div>
 
                     <div class="carousel-games__raiting">
-                        <div class="raiting__cricle">
+                        <div class="raiting__circle">
                             <div class="circle__border">
                                 <span class="circle__mark">9</span>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="carousel-games__info">
-                            <a href="#" class="carousel-games__category">JUEGOS</a>
+                    <div class="carousel-games__info">
+                        <a href="#" class="carousel-games__category">JUEGOS</a>
 
-                            <div class="carousel-games__line"></div>
+                        <div class="carousel-games__line"></div>
 
-                            <h2 class="carousel-games__title">
-                                <a href="" class="carousel-games__link">
-                                    The Walking Dead: Season Two Review
-                                </a>
-                            </h2>
-                        </div>
+                        <h2 class="carousel-games__title">
+                            <a href="" class="carousel-games__link">
+                                The Walking Dead: Season Two Review
+                            </a>
+                        </h2>
                     </div>
                 </li>
 
-                <li class="carousel-games__item">
+                <li class="carousel-games__item carousel-games__item--hidden">
                     <div class="carousel-games__image">
                         <a href="#" class="carousel-games__image-link">
                             <img src="./assets/img/carrusel-games-4.jpg" class="carousel-games__img" />
@@ -1204,23 +1288,23 @@
                     </div>
 
                     <div class="carousel-games__raiting">
-                        <div class="raiting__cricle">
+                        <div class="raiting__circle">
                             <div class="circle__border">
                                 <span class="circle__mark">5</span>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="carousel-games__info">
-                            <a href="#" class="carousel-games__category">JUEGOS</a>
+                    <div class="carousel-games__info">
+                        <a href="#" class="carousel-games__category">JUEGOS</a>
 
-                            <div class="carousel-games__line"></div>
+                        <div class="carousel-games__line"></div>
 
-                            <h2 class="carousel-games__title">
-                                <a href="" class="carousel-games__link">
-                                    Sherlock Holmes: Crimes & Punishment
-                                </a>
-                            </h2>
-                        </div>
+                        <h2 class="carousel-games__title">
+                            <a href="" class="carousel-games__link">
+                                Sherlock Holmes: Crimes & Punishment
+                            </a>
+                        </h2>
                     </div>
                 </li>
 
@@ -1237,7 +1321,7 @@
                     <h3 class="news__title">Noticias</h3>
                 </header>
 
-                <div class="news__post">
+                <div class="news__posts">
 
                     <article class="news__main-post">
 
@@ -1280,6 +1364,7 @@
                             </p>
 
                             <div class="main-post__footer-info">
+
                                 <div class="footer-info__container">
                                     <div class="main-post__views">
                                         <i class="fa-solid fa-eye"></i>
@@ -1309,14 +1394,14 @@
                         <article class="news__post">
                             <div class="news__image">
                                 <a href="#" class="news__link-image">
-                                    <img src="assets/img/news-4.jpg" class="news__img" />
+                                    <img src="assets/img/news-2.jpg" class="news__img" />
                                 </a>
                             </div>
 
                             <div class="news__detail">
                                 <h4 class="news__title-post">
                                     <a href="#" class="news__link-title">
-                                        Especificaciones PS5 Slim Confirmadas
+                                        Lanzamientos más esperados para 2024
                                     </a>
                                 </h4>
 
@@ -1553,6 +1638,7 @@
             <section class="main__posts">
                 <header class="post__subheader">
                     <ul class="post__list-header">
+
                         <li class="list-header__item list-header--active">
                             <h3 class="list-header__title">Últimos articulos</h3>
                         </li>
@@ -1863,8 +1949,8 @@
                         </div>
 
                         <div class="form__container-remember">
-                            <label for="remember" class="form__label">Recuerdame</label>
                             <input type="checkbox" name="remember" id="remember" class="form__input" />
+                            <label for="remember" class="form__label">Recuerdame</label>
                         </div>
 
                         <input type="submit" class="form__submit" value="Iniciar sesión" />
@@ -1892,7 +1978,7 @@
                         </a>
                     </li>
 
-                    <li class="social__item social__item--blue">
+                    <li class="social__item social__item--dark-blue">
                         <a href="#" class="social__link">
                             <div class="social__icon">
                                 <i class="fa-brands fa-facebook-f"></i>
@@ -1905,7 +1991,7 @@
                         </a>
                     </li>
 
-                    <li class="social__item social__item--blue">
+                    <li class="social__item social__item--red">
                         <a href="#" class="social__link">
                             <div class="social__icon">
                                 <i class="fa-brands fa-youtube"></i>
@@ -1918,7 +2004,7 @@
                         </a>
                     </li>
 
-                    <li class="social__item social__item--blue">
+                    <li class="social__item social__item--pink">
                         <a href="#" class="social__link">
                             <div class="social__icon">
                                 <i class="fa-brands fa-instagram"></i>
@@ -1931,7 +2017,7 @@
                         </a>
                     </li>
 
-                    <li class="social__item social__item--blue">
+                    <li class="social__item social__item--yellow">
                         <a href="#" class="social__link">
                             <div class="social__icon">
                                 <i class="fa-brands fa-linkedin-in"></i>
@@ -1969,12 +2055,12 @@
                             </h3>
                         </li>
                         <li class="list-header__item">
-                            <h3 class="list-header__title">
+                            <h3 class="list-header__title list-header--small">
                                 <a href="#" class="list-header__link-title">POPULAR</a>
                             </h3>
                         </li>
                         <li class="list-header__item">
-                            <h3 class="list-header__title">
+                            <h3 class="list-header__title list-header--small">
                                 <a href="#" class="list-header__link-title">COMENTARIOS</a>
                             </h3>
                         </li>
@@ -2170,9 +2256,11 @@
                             </h3>
                         </li>
                         <li class="last-reviews__item">
-                            <a href="#" class="last-reviews__link-title">
-                                Mejores Reviews
-                            </a>
+                            <h3 class="last-reviews__title">
+                                <a href="#" class="last-reviews__link-title last-reviews__link-title--small">
+                                    Mejores Reviews
+                                </a>
+                            </h3>
                         </li>
                     </ul>
                 </header>
@@ -2289,32 +2377,33 @@
                         officiis ex neque corporis cum animi saepe placeat repellat dolorum, quia molestias esse velit
                         numquam? Pariatur, alias.
                     </p>
+                </div>
 
-                    <div class="footer__tags">
-                        <h3 class="tags__title">Etiquetas</h3>
+                <div class="footer__tags">
+                    <h3 class="tags__title">Etiquetas</h3>
 
-                        <div class="tags__container">
+                    <div class="tags__container">
 
-                            <a href="#" class="tags__tag">Aventura</a>
-                            <a href="#" class="tags__tag">Lucha</a>
-                            <a href="#" class="tags__tag">Plataformas</a>
-                            <a href="#" class="tags__tag">RPG</a>
-                            <a href="#" class="tags__tag">Mundo Libre</a>
-                            <a href="#" class="tags__tag">Shooter</a>
-                            <a href="#" class="tags__tag">Survival</a>
-                            <a href="#" class="tags__tag">RPG</a>
-                            <a href="#" class="tags__tag">Lucha</a>
-                            <a href="#" class="tags__tag">Plataformas</a>
-                            <a href="#" class="tags__tag">RPG</a>
-                            <a href="#" class="tags__tag">Mundo Libre</a>
-                            <a href="#" class="tags__tag">Shooter</a>
-                            <a href="#" class="tags__tag">Survival</a>
-                            <a href="#" class="tags__tag">Survival</a>
-                            <a href="#" class="tags__tag">Survival</a>
+                        <a href="#" class="tags__tag">Aventura</a>
+                        <a href="#" class="tags__tag">Lucha</a>
+                        <a href="#" class="tags__tag">Plataformas</a>
+                        <a href="#" class="tags__tag">RPG</a>
+                        <a href="#" class="tags__tag">Mundo Libre</a>
+                        <a href="#" class="tags__tag">Shooter</a>
+                        <a href="#" class="tags__tag">Survival</a>
+                        <a href="#" class="tags__tag">RPG</a>
+                        <a href="#" class="tags__tag">Lucha</a>
+                        <a href="#" class="tags__tag">Plataformas</a>
+                        <a href="#" class="tags__tag">RPG</a>
+                        <a href="#" class="tags__tag">Mundo Libre</a>
+                        <a href="#" class="tags__tag">Shooter</a>
+                        <a href="#" class="tags__tag">Survival</a>
+                        <a href="#" class="tags__tag">Survival</a>
+                        <a href="#" class="tags__tag">Survival</a>
 
-                        </div>
                     </div>
                 </div>
+
 
             </section>
 
